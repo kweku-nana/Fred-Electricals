@@ -1,0 +1,150 @@
+/* Reset and layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #00ccff, 0 0 10px #00ccff;
+  }
+  100% {
+    text-shadow: 0 0 20px #00ccff, 0 0 30px #00ccff;
+  }
+}
+
+/* Header and Nav */
+header {
+  background-color: #111;
+  padding: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  color: #00ccff;
+  font-size: 28px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.3s;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #00ccff;
+  color: #111;
+}
+
+/* Main content area */
+main {
+  flex: 1;
+}
+
+/* Hero sections */
+.home-hero,
+.about-hero,
+.services-hero,
+.contact-hero {
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+  padding: 60px 40px;
+  display: flex;
+  align-items: center;
+}
+
+.home-hero {
+  background-image: url('home.jpg');
+}
+
+.about-hero {
+  background-image: url('about.jpg');
+}
+
+.services-hero {
+  background-image: url('services.jpg');
+}
+
+.contact-hero {
+  background-image: url('contact.jpg');
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 800px;
+  text-align: left;
+}
+
+.hero-content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto;
+}
+.services-section {
+  padding: 60px 20px;
+  background-color: rgba(0, 0, 0, 0.6); /* transparent black overlay */
+  color: #f0f0f0;
+  text-align: left;
+}
+
+.services-section h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #00ccff;
+}
+
+.services-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.services-list li {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+  border-left: 4px solid #00ccff;
+  padding-left: 15px;
+}
